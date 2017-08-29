@@ -1,0 +1,11 @@
+page-products {
+    ion-searchbar{
+        position: fixed;
+        z-index: inherit;
+        background-color: white !important;
+    }
+    ion-list {
+        position: relative;
+        top: 52px;
+    }
+}

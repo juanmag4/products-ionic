@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Products</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="nameFilter" [ngModelOptions]="{standalone: true}" placeholder="Filter"></ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let product of products | productFilter: nameFilter" (click)="toProductDetail($event, product)">
+      {{product.name}}
+    </button>
+  </ion-list>
+</ion-content>

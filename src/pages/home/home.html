@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>App de Productos en Ionic</h3>
+
+  <p>
+    Esta es la Home Page, item Home en el menu lateral.
+  </p>
+
+  <p>
+    El item Products carga todos los productos de la base de datos, los que se pueden filtrar en la barra de filtro por nombre.
+    Al hacer click en algunos de ellos se puede ver el detalle del mismo.
+    Cada vez que se vuelva a atras se hara una llamada al servicio "productsAPI" para mantener la lista siempre actualizada.
+  </p>
+
+  <p>
+    El item Search permite hacer busquedas filtrando por nombre y descripcion del producto.
+    Al hacer click en alguno de ellos se puede ver el detalle del mismo.
+  </p>
+
+  <button ion-button secondary menuToggle>Abrir Menu Lateral</button>
+</ion-content>
